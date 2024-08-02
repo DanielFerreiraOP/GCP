@@ -31,8 +31,8 @@ jobs:
           echo "Running build..."
           echo "The value of MY_VARIABLE is $MY_VARIABLE"
 
-      - name: Display the environment variable
+      - name: Display the secrets - variable
         run: echo "The value of MY_VARIABLE is ${{ secrets.TESTE_VARIAVEL }}"
 
-      - name: Display the environment variable
+      - name: Display the vars - variable
         run: echo "The value of MY_VARIABLE is ${{ vars.NOME_PROJETO_SONAR }}"
