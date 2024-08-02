@@ -1,0 +1,29 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - '**' ##qualquer branch
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest ##imagem do ubuntu
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Set environment variable
+        run: echo "MY_VARIABLE=Hello" >> $GITHUB_ENV
+
+      - name: Display environment variable
+        run: echo $MY_VARIABLE
+
+      - name: Run a sample script
+        run: |
+          echo "Running build..."
+          echo "The value of MY_VARIABLE is $MY_VARIABLE"
