@@ -32,4 +32,4 @@ jobs:
           echo "The value of MY_VARIABLE is $MY_VARIABLE"
 
       - name: Display the environment variable
-        run: echo "The value of MY_VARIABLE is ${{ secrets.TESTE_VARIAVEL }}"
+        run: echo "The value of MY_VARIABLE is ${{ vars.TESTE_VARIAVEL }}"
