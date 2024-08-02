@@ -4,18 +4,21 @@ on:
   push:
     branches:
       - main
-      - '**' ##qualquer branch
+      ##- '**' ##qualquer branch
   pull_request:
     branches:
       - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest ##imagem do ubuntu
+    runs-on: ubuntu-latest ##onde roda
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
+
+      - name: lista o repositorio
+        run: ls -la
 
       - name: Set environment variable
         run: echo "MY_VARIABLE=Hello" >> $GITHUB_ENV
@@ -27,3 +30,9 @@ jobs:
         run: |
           echo "Running build..."
           echo "The value of MY_VARIABLE is $MY_VARIABLE"
+
+      - name: Display the secrets - variable
+        run: echo "The value of MY_VARIABLE is ${{ secrets.TESTE_VARIAVEL }}"
+
+      - name: Display the vars - variable
+        run: echo "The value of MY_VARIABLE is ${{ vars.NOME_PROJETO_SONAR }}"
