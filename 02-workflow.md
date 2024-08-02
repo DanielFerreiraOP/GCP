@@ -1,3 +1,5 @@
 ### criando um workflow
 
-primeiro ele fica no diretorio github/workflows, um arquivo chamado ci.yml
+primeiro ele fica no diretorio github/workflows
+
+crie o arquivo chamado ci.yml e adicione os steps
