@@ -33,3 +33,6 @@ jobs:
 
       - name: Display the environment variable
         run: echo "The value of MY_VARIABLE is ${{ secrets.TESTE_VARIAVEL }}"
+
+      - name: Display the environment variable
+        run: echo "The value of MY_VARIABLE is ${{ vars.NOME_PROJETO_SONAR }}"
