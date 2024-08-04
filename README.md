@@ -19,3 +19,7 @@ serveless, vc sobe apenas o código
 ### Preços google cloud
 
 https://cloud.google.com/pricing/list?hl=pt
+
+
+### Painel personalizado
+
