@@ -59,3 +59,23 @@ lembre-se de remover a prevenção de acesso público
 
 a url do objeto publico fica aqui ->
 ![](../img/bucket_url_public_access.png)
+
+
+#### Comandos Gsutil
+
+verificar o conteudo
+```bash
+gsutil ls gs://bd-lab-gcp
+```
+
+copiar algo para bucket
+```bash
+gsutil cp <arquivo> gs://bd-lab-gcp
+```
+
+remover arquivos
+```bash
+gsutil rm gs://bd-lab-gcp/*
+gsutil rm gs://bd-lab-gcp/**
+gsutil rm gs://bd-lab-gcp/<arquivo>
+```

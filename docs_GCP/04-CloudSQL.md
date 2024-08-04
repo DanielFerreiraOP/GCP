@@ -21,6 +21,9 @@ INSERT INTO tova (nome, numero) VALUES ('João', 1);
 INSERT INTO tova (nome, numero) VALUES ('Maria', 2);
 ```
 
+para criar tabelas antes do nome da tablea podemos colocaar o nome do banco.tabela
+exemplo: meudados.apple_store
+
 para visualizar:
 
 ```sql
