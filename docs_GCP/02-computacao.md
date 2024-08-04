@@ -43,3 +43,16 @@ não passa configurações de ambiente igual no kubernetes engine
 apenas passamos o container para eles
 são para container sem estado, que não salvam informações
 invocado por http
+
+
+mi%|5:W[*i12[c5
+
+
+#### mão na massa !
+
+Criando chave ssh para acessar servidor linux
+gere a chave com o caminho e nome e usuário
+ssh-keygen -t rsa -f ~/.ssh/gcp_rsa -C danielferreira_emp
+
+após issto só conectar com a chave privada, não esqueça de dar um chmod 400 nela
+
