@@ -57,4 +57,4 @@ distribuição por zona
 gerenciado, alta escalabilidade
 latência 1 ms
 Ideal para jogos online, cache, outros
-preço por tamanho de máquina.
+preço por tamanho de máquina
